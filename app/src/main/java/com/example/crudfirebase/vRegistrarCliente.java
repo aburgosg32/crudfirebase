@@ -42,7 +42,7 @@ public class vRegistrarCliente extends AppCompatActivity {
         EditText apellidocliente = findViewById(R.id.txtApellidoCliente);
         EditText nombrecliente = findViewById(R.id.txtNombreCliente);
         EditText telefonocliente = findViewById(R.id.txtTelefonoCliente);
-        EditText correocliente = findViewById(R.id.txtTelefonoCliente);
+        EditText correocliente = findViewById(R.id.txtCOrreoCliente);
         EditText direccioncliente = findViewById(R.id.txtDireccionCliente);
 
         Button btnregistrarcliente = findViewById(R.id.btnRegistrarCliente);
