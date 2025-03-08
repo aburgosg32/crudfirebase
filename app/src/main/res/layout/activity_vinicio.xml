@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vInicio"
+    android:background="#FEBF3E" android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/wolflogo"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnIniciarApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INICIAR"
+        android:layout_margin="40dp"
+        android:backgroundTint="#000000"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

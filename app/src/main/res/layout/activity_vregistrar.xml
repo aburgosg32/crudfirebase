@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vRegistrar"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2" android:rowCount="1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp">
+
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/wolflogo"
+            android:layout_column="0"
+            android:layout_row="0" />
+
+        <TextView android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="GESTION DE USUARIOS"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="18dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+    </GridLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRO DE USUARIOS"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="7">
+
+                <TextView android:text="DNI : "
+                    android:layout_marginStart="40dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtDniUsuario"
+                    android:layout_width="250dp"
+                    android:hint="Ingrese Dni"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="number"
+                    android:maxLength="8"/>
+                <TextView android:text="APELLIDOS : "
+                    android:layout_marginStart="40dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtApellidoUsuario"
+                    android:layout_width="250dp"
+                    android:hint="Ingrese Apellidos"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView android:text="NOMBRES : "
+                    android:layout_marginStart="40dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtNombreUsuario"
+                    android:layout_width="250dp"
+                    android:hint="Ingrese Nombres"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView android:text="TELEFONO : "
+                    android:layout_marginStart="40dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtTelefonoUsuario"
+                    android:layout_width="250dp"
+                    android:hint="Ingrese Telefono"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="number"
+                    android:maxLength="9"/>
+
+                <TextView android:text="CORREO : "
+                    android:layout_marginStart="40dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtCorreoUsuario"
+                    android:layout_width="250dp"
+                    android:hint="Ingrese Correo"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView android:text="PASSWORD : "
+                    android:layout_marginStart="40dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/txtPassUsuario"
+                    android:layout_width="250dp"
+                    android:hint="Ingrese Password"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="numberPassword"/>
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="450dp">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:layout_marginStart="10dp">
+
+                <Button
+                    android:id="@+id/btnRegistrarUsuario"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="Registrar"
+                    android:backgroundTint="#000000"
+                    android:textSize="20dp"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btnLimpiarUsuario"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:text="Limpiar"
+                    android:backgroundTint="#FEBF3E"
+                    android:textSize="20dp"
+                    android:layout_marginEnd="5dp"/>
+
+                <Button
+                    android:id="@+id/btnCancelarUsuario"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:text="Cancelar"
+                    android:backgroundTint="#000000"
+                    android:textSize="20dp"/>
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
